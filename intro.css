@@ -36,9 +36,6 @@ a {
 }
 
 /*-------------------------------------------
-  これより下にコードを追加してください。
-  -------------------------------------------*/
-/*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
 .header {
@@ -47,7 +44,14 @@ a {
   justify-content: space-between;
   height: 80px;
   width: 100%;
+  background-color: #f8f8f8;
+  padding: 0 40px;
+  position: fixed; /* 画面に固定 */
+  top: 0;          /* 画面の一番上から */
+  left: 0;         /* 画面の一番左から */
+  z-index: 1000;  
 }
+
 .header-logo {
   height: 24px;
 }
@@ -55,8 +59,18 @@ a {
   display: flex;
   gap: 24px;
 }
+.header li a {
+  color: #e0a265; 
+}
+
 .header li a:hover {
   opacity: 0.7;
+  color: #804600;
+}
+.container {
+  max-width: 1200px; /* 例: コンテンツの最大幅 */
+  margin: 0 auto; /* 中央寄せ */
+  padding: 0 15px; /* 左右のパディング */
 }
 /*-------------------------------------------
   メインビジュアル
@@ -79,7 +93,9 @@ a {
 }
 
 .section-title {
-  border-bottom: solid 1px #383e45;
+  color: #e0a265;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #e0a265;
 }
 
 /* -------------------------------------------
@@ -101,6 +117,13 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
  }
 
 /* -------------------------------------------
@@ -116,6 +139,16 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 0.2em 0.5em;
+  margin: 2em 1em;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.interest h3 {
+  color: #804600;
 }
 .article-image {
   width: 100%;
