@@ -5,15 +5,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Hannotate TC',sans-serif;
 }
 
 li {
   list-style: none;
+  font-family: 'Hannotate TC',sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #000000;
+  font-family: 'Hannotate TC',sans-serif;
 }
 
 /*-------------------------------------------
@@ -48,7 +51,8 @@ a {
   position: fixed; /* 画面に固定 */
   top: 0;          /* 画面の一番上から */
   left: 0;         /* 画面の一番左から */
-  z-index: 1000;  
+  z-index: 1000; 
+  opacity:0.8;  
 }
 
 .header-logo {
@@ -71,6 +75,10 @@ a {
   margin: 0 auto; /* 中央寄せ */
   padding: 0 15px; /* 左右のパディング */
 }
+.title {
+  color: #5c3104;/*文字色*/
+  text-align: left;
+}
 
 /*-------------------------------------------
   セクション 共通部分
@@ -86,6 +94,7 @@ a {
   color: #e0a265;/*文字色*/
   /*線の種類（点線）2px 線色*/
   border-bottom: dashed 2px #e0a265;
+  font-size: 2.0em;
 }
 
 /* -------------------------------------------
@@ -101,6 +110,7 @@ a {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
  }
 
  .profile-info {
@@ -115,7 +125,12 @@ a {
     border: dashed 2px #ffc3c3;
     border-radius: 8px;
  }
-
+ .profile h3 {
+  color: #804600;
+  text-align: center;
+  border-bottom: dashed 2px #e0a265;
+  font-size: 1.5em;
+ }
 /* -------------------------------------------
   趣味
   -------------------------------------------*/
@@ -139,9 +154,12 @@ a {
 }
 .interest h3 {
   color: #804600;
-}
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: dashed 2px #e0a265;}
+
 .article-image {
-  width: 80%;
+  width: 60%;
   height: 200px;
   object-fit: cover;
   display: block; 
