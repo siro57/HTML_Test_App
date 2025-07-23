@@ -130,6 +130,7 @@ a {
   text-align: center;
   border-bottom: dashed 2px #e0a265;
   font-size: 1.5em;
+  display: inline-block;
  }
 /* -------------------------------------------
   趣味
@@ -156,7 +157,9 @@ a {
   color: #804600;
   font-size: 1.5em;
   text-align: center;
-  border-bottom: dashed 2px #e0a265;}
+  border-bottom: dashed 2px #e0a265;
+  display: inline-block;
+}
 
 .article-image {
   width: 60%;
